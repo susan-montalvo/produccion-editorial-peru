@@ -6,6 +6,8 @@
 
 ![Indicadores principales del dashboard](docs/capturas/01_kpis.png)
 
+![Mapa de títulos con ISBN por departamento y evolución de Lima frente al resto del país](docs/capturas/03_territorio.png)
+
 ## Pregunta de investigación
 
 **¿Cómo ha cambiado la producción y la circulación editorial en el Perú en los últimos diez años?**
