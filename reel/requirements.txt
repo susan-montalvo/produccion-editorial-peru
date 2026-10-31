@@ -1,0 +1,11 @@
+# Va en un entorno aparte: qwen-tts fija transformers==4.57.3.
+# En Mac Intel, PyTorch reciente solo está en conda-forge; se instaló desde ahí y luego se agregó lo demás.
+torch
+qwen-tts
+faster-whisper
+pillow
+imageio-ffmpeg
+soundfile
+jiwer
+num2words
+truststore

@@ -1,0 +1,401 @@
+categoria,anio,valor
+Amazonas,2008,0.0
+Áncash,2008,13.0
+Apurímac,2008,2.0
+Arequipa,2008,77.0
+Ayacucho,2008,4.0
+Cajamarca,2008,21.0
+Callao,2008,15.0
+Cusco,2008,19.0
+Huancavelica,2008,2.0
+Huánuco,2008,9.0
+Ica,2008,5.0
+Junín,2008,63.0
+La Libertad,2008,22.0
+Lambayeque,2008,6.0
+Lima,2008,4905.0
+Loreto,2008,28.0
+Madre de Dios,2008,3.0
+Moquegua,2008,0.0
+Pasco,2008,1.0
+Piura,2008,24.0
+Puno,2008,9.0
+San Martín,2008,2.0
+Tacna,2008,0.0
+Tumbes,2008,2.0
+Ucayali,2008,0.0
+Amazonas,2009,0.0
+Áncash,2009,2.0
+Apurímac,2009,0.0
+Arequipa,2009,101.0
+Ayacucho,2009,2.0
+Cajamarca,2009,20.0
+Callao,2009,10.0
+Cusco,2009,59.0
+Huancavelica,2009,0.0
+Huánuco,2009,3.0
+Ica,2009,9.0
+Junín,2009,56.0
+La Libertad,2009,35.0
+Lambayeque,2009,9.0
+Lima,2009,4937.0
+Loreto,2009,44.0
+Madre de Dios,2009,5.0
+Moquegua,2009,0.0
+Pasco,2009,1.0
+Piura,2009,14.0
+Puno,2009,12.0
+San Martín,2009,3.0
+Tacna,2009,4.0
+Tumbes,2009,0.0
+Ucayali,2009,2.0
+Amazonas,2010,0.0
+Áncash,2010,11.0
+Apurímac,2010,0.0
+Arequipa,2010,89.0
+Ayacucho,2010,11.0
+Cajamarca,2010,31.0
+Callao,2010,9.0
+Cusco,2010,24.0
+Huancavelica,2010,2.0
+Huánuco,2010,2.0
+Ica,2010,3.0
+Junín,2010,89.0
+La Libertad,2010,34.0
+Lambayeque,2010,3.0
+Lima,2010,5643.0
+Loreto,2010,18.0
+Madre de Dios,2010,11.0
+Moquegua,2010,0.0
+Pasco,2010,2.0
+Piura,2010,26.0
+Puno,2010,13.0
+San Martín,2010,1.0
+Tacna,2010,8.0
+Tumbes,2010,0.0
+Ucayali,2010,1.0
+Amazonas,2011,0.0
+Áncash,2011,9.0
+Apurímac,2011,5.0
+Arequipa,2011,74.0
+Ayacucho,2011,8.0
+Cajamarca,2011,20.0
+Callao,2011,8.0
+Cusco,2011,35.0
+Huancavelica,2011,22.0
+Huánuco,2011,6.0
+Ica,2011,4.0
+Junín,2011,82.0
+La Libertad,2011,31.0
+Lambayeque,2011,5.0
+Lima,2011,5092.0
+Loreto,2011,23.0
+Madre de Dios,2011,5.0
+Moquegua,2011,2.0
+Pasco,2011,1.0
+Piura,2011,25.0
+Puno,2011,10.0
+San Martín,2011,3.0
+Tacna,2011,4.0
+Tumbes,2011,0.0
+Ucayali,2011,2.0
+Amazonas,2012,9.0
+Áncash,2012,6.0
+Apurímac,2012,2.0
+Arequipa,2012,102.0
+Ayacucho,2012,8.0
+Cajamarca,2012,28.0
+Callao,2012,24.0
+Cusco,2012,46.0
+Huancavelica,2012,7.0
+Huánuco,2012,4.0
+Ica,2012,4.0
+Junín,2012,70.0
+La Libertad,2012,62.0
+Lambayeque,2012,12.0
+Lima,2012,5391.0
+Loreto,2012,23.0
+Madre de Dios,2012,3.0
+Moquegua,2012,1.0
+Pasco,2012,2.0
+Piura,2012,20.0
+Puno,2012,105.0
+San Martín,2012,14.0
+Tacna,2012,11.0
+Tumbes,2012,0.0
+Ucayali,2012,1.0
+Amazonas,2013,2.0
+Áncash,2013,13.0
+Apurímac,2013,4.0
+Arequipa,2013,83.0
+Ayacucho,2013,7.0
+Cajamarca,2013,21.0
+Callao,2013,22.0
+Cusco,2013,75.0
+Huancavelica,2013,6.0
+Huánuco,2013,7.0
+Ica,2013,7.0
+Junín,2013,116.0
+La Libertad,2013,81.0
+Lambayeque,2013,30.0
+Lima,2013,6157.0
+Loreto,2013,25.0
+Madre de Dios,2013,6.0
+Moquegua,2013,2.0
+Pasco,2013,1.0
+Piura,2013,23.0
+Puno,2013,55.0
+San Martín,2013,7.0
+Tacna,2013,5.0
+Tumbes,2013,2.0
+Ucayali,2013,2.0
+Amazonas,2014,0.0
+Áncash,2014,18.0
+Apurímac,2014,10.0
+Arequipa,2014,111.0
+Ayacucho,2014,4.0
+Cajamarca,2014,16.0
+Callao,2014,19.0
+Cusco,2014,85.0
+Huancavelica,2014,9.0
+Huánuco,2014,6.0
+Ica,2014,1.0
+Junín,2014,75.0
+La Libertad,2014,100.0
+Lambayeque,2014,33.0
+Lima,2014,5542.0
+Loreto,2014,31.0
+Madre de Dios,2014,2.0
+Moquegua,2014,0.0
+Pasco,2014,2.0
+Piura,2014,29.0
+Puno,2014,42.0
+San Martín,2014,5.0
+Tacna,2014,12.0
+Tumbes,2014,0.0
+Ucayali,2014,0.0
+Amazonas,2015,4.0
+Áncash,2015,25.0
+Apurímac,2015,13.0
+Arequipa,2015,63.0
+Ayacucho,2015,9.0
+Cajamarca,2015,27.0
+Callao,2015,13.0
+Cusco,2015,63.0
+Huancavelica,2015,2.0
+Huánuco,2015,8.0
+Ica,2015,3.0
+Junín,2015,83.0
+La Libertad,2015,86.0
+Lambayeque,2015,27.0
+Lima,2015,5431.0
+Loreto,2015,9.0
+Madre de Dios,2015,8.0
+Moquegua,2015,1.0
+Pasco,2015,2.0
+Piura,2015,30.0
+Puno,2015,166.0
+San Martín,2015,2.0
+Tacna,2015,13.0
+Tumbes,2015,0.0
+Ucayali,2015,5.0
+Amazonas,2016,2.0
+Áncash,2016,28.0
+Apurímac,2016,0.0
+Arequipa,2016,92.0
+Ayacucho,2016,13.0
+Cajamarca,2016,33.0
+Callao,2016,5.0
+Cusco,2016,80.0
+Huancavelica,2016,2.0
+Huánuco,2016,22.0
+Ica,2016,1.0
+Junín,2016,102.0
+La Libertad,2016,122.0
+Lambayeque,2016,36.0
+Lima,2016,5807.0
+Loreto,2016,8.0
+Madre de Dios,2016,2.0
+Moquegua,2016,5.0
+Pasco,2016,6.0
+Piura,2016,13.0
+Puno,2016,63.0
+San Martín,2016,7.0
+Tacna,2016,12.0
+Tumbes,2016,0.0
+Ucayali,2016,2.0
+Amazonas,2017,4.0
+Áncash,2017,25.0
+Apurímac,2017,4.0
+Arequipa,2017,120.0
+Ayacucho,2017,21.0
+Cajamarca,2017,31.0
+Callao,2017,6.0
+Cusco,2017,89.0
+Huancavelica,2017,8.0
+Huánuco,2017,17.0
+Ica,2017,17.0
+Junín,2017,184.0
+La Libertad,2017,105.0
+Lambayeque,2017,37.0
+Lima,2017,5862.0
+Loreto,2017,17.0
+Madre de Dios,2017,3.0
+Moquegua,2017,6.0
+Pasco,2017,2.0
+Piura,2017,41.0
+Puno,2017,107.0
+San Martín,2017,6.0
+Tacna,2017,17.0
+Tumbes,2017,1.0
+Ucayali,2017,12.0
+Amazonas,2018,7.0
+Áncash,2018,36.0
+Apurímac,2018,10.0
+Arequipa,2018,213.0
+Ayacucho,2018,20.0
+Cajamarca,2018,32.0
+Callao,2018,25.0
+Cusco,2018,78.0
+Huancavelica,2018,12.0
+Huánuco,2018,35.0
+Ica,2018,31.0
+Junín,2018,148.0
+La Libertad,2018,185.0
+Lambayeque,2018,52.0
+Lima,2018,5761.0
+Loreto,2018,28.0
+Madre de Dios,2018,2.0
+Moquegua,2018,3.0
+Pasco,2018,4.0
+Piura,2018,39.0
+Puno,2018,359.0
+San Martín,2018,9.0
+Tacna,2018,14.0
+Tumbes,2018,0.0
+Ucayali,2018,8.0
+Amazonas,2019,9.0
+Áncash,2019,53.0
+Apurímac,2019,11.0
+Arequipa,2019,265.0
+Ayacucho,2019,36.0
+Cajamarca,2019,34.0
+Callao,2019,34.0
+Cusco,2019,106.0
+Huancavelica,2019,10.0
+Huánuco,2019,73.0
+Ica,2019,38.0
+Junín,2019,124.0
+La Libertad,2019,144.0
+Lambayeque,2019,40.0
+Lima,2019,6829.0
+Loreto,2019,27.0
+Madre de Dios,2019,5.0
+Moquegua,2019,14.0
+Pasco,2019,4.0
+Piura,2019,68.0
+Puno,2019,190.0
+San Martín,2019,15.0
+Tacna,2019,22.0
+Tumbes,2019,0.0
+Ucayali,2019,8.0
+Amazonas,2020,4.0
+Áncash,2020,32.0
+Apurímac,2020,10.0
+Arequipa,2020,145.0
+Ayacucho,2020,27.0
+Cajamarca,2020,33.0
+Callao,2020,62.0
+Cusco,2020,128.0
+Huancavelica,2020,5.0
+Huánuco,2020,84.0
+Ica,2020,20.0
+Junín,2020,128.0
+La Libertad,2020,100.0
+Lambayeque,2020,59.0
+Lima,2020,4577.0
+Loreto,2020,12.0
+Madre de Dios,2020,12.0
+Moquegua,2020,8.0
+Pasco,2020,6.0
+Piura,2020,39.0
+Puno,2020,161.0
+San Martín,2020,23.0
+Tacna,2020,13.0
+Tumbes,2020,1.0
+Ucayali,2020,10.0
+Amazonas,2021,12.0
+Áncash,2021,37.0
+Apurímac,2021,30.0
+Arequipa,2021,241.0
+Ayacucho,2021,59.0
+Cajamarca,2021,39.0
+Callao,2021,72.0
+Cusco,2021,136.0
+Huancavelica,2021,10.0
+Huánuco,2021,151.0
+Ica,2021,38.0
+Junín,2021,133.0
+La Libertad,2021,118.0
+Lambayeque,2021,52.0
+Lima,2021,6246.0
+Loreto,2021,40.0
+Madre de Dios,2021,13.0
+Moquegua,2021,20.0
+Pasco,2021,9.0
+Piura,2021,99.0
+Puno,2021,238.0
+San Martín,2021,33.0
+Tacna,2021,28.0
+Tumbes,2021,3.0
+Ucayali,2021,28.0
+Amazonas,2022,3.0
+Áncash,2022,55.0
+Apurímac,2022,14.0
+Arequipa,2022,259.0
+Ayacucho,2022,39.0
+Cajamarca,2022,38.0
+Callao,2022,36.0
+Cusco,2022,90.0
+Huancavelica,2022,24.0
+Huánuco,2022,126.0
+Ica,2022,37.0
+Junín,2022,159.0
+La Libertad,2022,162.0
+Lambayeque,2022,54.0
+Lima,2022,6671.0
+Loreto,2022,35.0
+Madre de Dios,2022,6.0
+Moquegua,2022,20.0
+Pasco,2022,9.0
+Piura,2022,112.0
+Puno,2022,291.0
+San Martín,2022,38.0
+Tacna,2022,16.0
+Tumbes,2022,1.0
+Ucayali,2022,15.0
+Amazonas,2023,6.0
+Áncash,2023,60.0
+Apurímac,2023,13.0
+Arequipa,2023,249.0
+Ayacucho,2023,46.0
+Cajamarca,2023,37.0
+Callao,2023,40.0
+Cusco,2023,93.0
+Huancavelica,2023,46.0
+Huánuco,2023,99.0
+Ica,2023,30.0
+Junín,2023,158.0
+La Libertad,2023,276.0
+Lambayeque,2023,59.0
+Lima,2023,6530.0
+Loreto,2023,40.0
+Madre de Dios,2023,2.0
+Moquegua,2023,14.0
+Pasco,2023,8.0
+Piura,2023,53.0
+Puno,2023,350.0
+San Martín,2023,59.0
+Tacna,2023,38.0
+Tumbes,2023,4.0
+Ucayali,2023,7.0

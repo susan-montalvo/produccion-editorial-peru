@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.DS_Store
+datos/cache/
+.env
+reel/mi_voz.*
+.venv-reel/
+reel/salidas/
+# Música de Pixabay: su licencia no permite redistribuir la pista suelta (sí el video mezclado)
+reel/*.mp3
+# Pista generada por hacer_reel.py cuando no se indica --musica (se regenera; el reel final usa la de Pixabay)
+reel/recursos/musica.wav

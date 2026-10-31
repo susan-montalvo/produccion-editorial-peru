@@ -1,0 +1,59 @@
+{
+  "titulo": "Libros en el Perú, 2015-2025",
+  "escenas": [
+    {
+      "frase": "En el Perú se publican más libros que nunca. En dos mil veinticinco se registraron diez mil trescientos cuarenta y cinco títulos.",
+      "cifra": "10 345",
+      "etiqueta": "títulos con ISBN en 2025, el máximo de la serie",
+      "imagen": "recursos/titulos.png",
+      "fuente_cifra": "BNP, catálogo ISBN: títulos por año de publicación",
+      "wer": 0.0
+    },
+    {
+      "frase": "Pero cada libro se imprime mucho menos. En dos mil veintitrés, se imprimieron casi sesenta por ciento menos ejemplares que en dos mil quince.",
+      "cifra": "−59 %",
+      "etiqueta": "ejemplares declarados, 2015 a 2023",
+      "imagen": "recursos/tiraje_promedio.png",
+      "fuente_cifra": "InfoArtes, tabla 1: 31,8 millones (2015) a 13,1 millones (2023)",
+      "wer": 0.0
+    },
+    {
+      "frase": "Las regiones ganan terreno: los títulos editados fuera de Lima casi se triplicaron, con Puno, La Libertad y Arequipa a la cabeza.",
+      "cifra": "×2,7",
+      "etiqueta": "títulos editados fuera de Lima, 2015 a 2023",
+      "imagen": "recursos/mapa_departamentos.png",
+      "fuente_cifra": "InfoArtes, tabla 8: 662 (2015) a 1 787 (2023)",
+      "wer": 0.045454545454545456
+    },
+    {
+      "frase": "Lo digital llegó para quedarse: hoy casi uno de cada cuatro títulos es electrónico. Pero el audiolibro aún es escaso: apenas uno de cada ciento ochenta y siete títulos.",
+      "cifra": "1 de 187",
+      "etiqueta": "títulos registrados como audiolibro, 2015 a 2025",
+      "imagen": "recursos/formatos_digitales.png",
+      "fuente_cifra": "Catálogo ISBN: 447 títulos en formato de audio de 83 762 (2015–2025); digitales 23,9 % en 2025",
+      "wer": 0.0
+    },
+    {
+      "frase": "El Perú vende cada vez menos libros al extranjero: sus exportaciones cayeron cuarenta y tres por ciento, y hoy importa más de cinco dólares por cada dólar que exporta.",
+      "cifra": "−43 %",
+      "etiqueta": "exportaciones de libros, 2015 a 2025",
+      "imagen": "recursos/mapa_mundo.png",
+      "fuente_cifra": "UN Comtrade, HS 4901: US$ 20,9 M (2015) a US$ 11,8 M (2025); importaciones US$ 65,6 M",
+      "wer": 0.0
+    },
+    {
+      "frase": "Todos estos datos están en mi tablero interactivo. Te invito a explorarlo: el enlace está en la publicación.",
+      "cifra": "",
+      "etiqueta": "Explora el tablero: enlace en la publicación",
+      "imagen": "recursos/portada_dashboard.png",
+      "wer": 0.0
+    }
+  ],
+  "hashtags": [
+    "#LibrosPeru",
+    "#IndustriaEditorial",
+    "#DatosAbiertos",
+    "#CienciaDeDatos",
+    "#Python"
+  ]
+}

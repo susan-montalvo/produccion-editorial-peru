@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Producción editorial en el Perú</title>
+  <meta name="description" content="Cómo cambió la producción y la circulación editorial en el Perú entre 2015 y 2025: títulos con ISBN, tirajes, formatos digitales, regiones y comercio exterior de libros.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='5' y='4' width='22' height='24' rx='3' fill='%232a78d6'/><rect x='9' y='9' width='14' height='2' fill='white'/><rect x='9' y='14' width='10' height='2' fill='white'/></svg>">
+  <link rel="stylesheet" href="assets/estilos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.33.0/plotly.min.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+
+<header class="portada">
+  <div class="contenedor">
+    <p class="antetitulo">Proyecto de datos</p>
+    <h1>Más títulos, menos ejemplares: la década editorial del Perú</h1>
+    <p class="pregunta"><strong>¿Cómo ha cambiado la producción y la circulación editorial en el Perú en los últimos diez años?</strong>
+      Libros impresos, publicaciones digitales y audiolibros, con datos del registro ISBN y del comercio exterior.</p>
+    <dl class="ficha">
+      <div><dt>Cobertura</dt><dd>Perú y sus 25 departamentos, 2015–2025</dd></div>
+      <div><dt>Fuentes</dt><dd>BNP – Agencia Peruana del ISBN · Ministerio de Cultura (InfoArtes) · UN Comtrade</dd></div>
+      <div><dt>Autora</dt><dd>Susan Montalvo</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="barra">
+  <div class="contenedor">
+    <nav aria-label="Secciones">
+      <a href="#resumen">Resumen</a>
+      <a href="#produccion">Producción</a>
+      <a href="#quien">Quién publica</a>
+      <a href="#territorio">Territorio</a>
+      <a href="#digital">Digital y audio</a>
+      <a href="#circulacion">Circulación</a>
+      <a href="#hallazgos">Hallazgos</a>
+      <a href="#metodo">Método y fuentes</a>
+    </nav>
+    <div class="filtros" role="group" aria-label="Filtros generales">
+      <label class="control">Desde
+        <select id="f-desde"></select>
+      </label>
+      <label class="control">Hasta
+        <select id="f-hasta"></select>
+      </label>
+      <label class="control">Departamento
+        <select id="f-depto"></select>
+      </label>
+      <button class="boton empuja" id="descargar" type="button">Descargar datos filtrados (CSV)</button>
+    </div>
+  </div>
+</div>
+
+<main class="contenedor">
+
+  <section id="resumen" aria-label="Indicadores principales">
+    <div class="kpis" id="kpis"></div>
+  </section>
+
+  <section id="produccion">
+    <h2>Producción: se publica más, en tirajes más cortos</h2>
+    <p class="bajada">Cada título con ISBN es una obra que un editor registró ante la Biblioteca Nacional. El número de títulos creció, pero la cantidad de ejemplares impresos por título se desplomó.</p>
+    <div class="rejilla">
+      <article class="tarjeta c7">
+        <header><div><h3>Títulos con ISBN por año</h3><p class="sub">Catálogo público de la Agencia Peruana del ISBN, por año de publicación</p></div></header>
+        <div class="grafico" id="g-titulos"></div>
+        <p class="pie">Fuente: BNP, catálogo ISBN (consulta del 29/10/2026). El año en curso se excluye porque está incompleto.</p>
+      </article>
+      <article class="tarjeta c5">
+        <header><div><h3>Tiraje promedio por título</h3><p class="sub">Ejemplares declarados ÷ títulos registrados</p></div></header>
+        <div class="grafico" id="g-tiraje-prom"></div>
+        <p class="pie">Fuente: BNP vía InfoArtes (Ministerio de Cultura), 2015–2023.</p>
+      </article>
+      <article class="tarjeta c12">
+        <header><div><h3>Títulos según el tamaño del tiraje</h3><p class="sub">Porcentaje de los títulos de cada año</p></div></header>
+        <div class="grafico" id="g-tiraje"></div>
+        <p class="pie">Fuente: BNP vía InfoArtes. Rangos de ejemplares agrupados a partir de la tabla 6.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="quien">
+    <h2>Quién publica y sobre qué</h2>
+    <p class="bajada">La autopublicación (el autor registra su propio libro) creció más rápido que cualquier otro tipo de editor. En temas, la literatura ha ganado espacio.</p>
+    <div class="rejilla">
+      <article class="tarjeta c7">
+        <header><div><h3>Participación por tipo de editor</h3><p class="sub">Porcentaje de los títulos de cada año</p></div></header>
+        <div class="grafico" id="g-agente"></div>
+        <p class="pie">"Otras entidades" agrupa empresas no editoriales, colegios e institutos e instituciones religiosas. Fuente: BNP vía InfoArtes.</p>
+      </article>
+      <article class="tarjeta c5">
+        <header><div><h3>Temas: primer y último año</h3><p class="sub">Porcentaje de títulos por área (clasificación Dewey)</p></div></header>
+        <div class="grafico" id="g-materia"></div>
+        <p class="pie">Fuente: BNP vía InfoArtes.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="territorio">
+    <h2>Territorio: Lima concentra, pero las regiones crecen</h2>
+    <p class="bajada">Elija una opción en el filtro. Luego, elija un departamento en el mapa para ver su evolución.</p>
+    <div class="rejilla">
+      <article class="tarjeta c7">
+        <header>
+          <div><h3>Títulos con ISBN por departamento</h3><p class="sub" id="sub-mapa"></p></div>
+          <label class="control">Indicador del mapa
+            <select id="f-indicador">
+              <option value="anual">Títulos año por año</option>
+              <option value="acumulado">Títulos acumulados en el periodo</option>
+              <option value="variacion">Variación entre el primer y el último año (%)</option>
+            </select>
+          </label>
+        </header>
+        <div class="anio-mapa" id="anio-mapa" role="group" aria-label="Año del mapa" hidden></div>
+        <div class="grafico alto" id="g-mapa"></div>
+        <p class="pie">La escala de títulos es logarítmica: Lima tiene decenas de veces más títulos que cualquier región. Límites departamentales: juaneladio/peru-geojson (INEI).</p>
+      </article>
+      <article class="tarjeta c5">
+        <header><div><h3 id="t-depto">Evolución del departamento</h3><p class="sub">Títulos con ISBN por año</p></div></header>
+        <div class="grafico" id="g-depto"></div>
+        <div class="tabla-envoltura" style="max-height:260px">
+          <table id="tabla-deptos"><thead><tr><th>Departamento</th><th class="num">Inicio</th><th class="num">Fin</th><th class="num">Var.</th></tr></thead><tbody></tbody></table>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="digital">
+    <h2>Digital y audio: el salto de la pandemia</h2>
+    <p class="bajada" id="bajada-digital">En 2020, con imprentas y librerías cerradas, uno de cada tres títulos fue digital, y hoy siguen siendo casi uno de cada cuatro. El audiolibro, en cambio, apenas aparece en el registro.</p>
+    <div class="rejilla">
+      <article class="tarjeta c6">
+        <header><div><h3>Impreso y digital</h3><p class="sub">Títulos con ISBN según soporte</p></div></header>
+        <div class="grafico" id="g-soporte"></div>
+        <p class="pie">Fuente: BNP vía InfoArtes, 2015–2023.</p>
+      </article>
+      <article class="tarjeta c6">
+        <header><div><h3>Formato de las publicaciones digitales</h3><p class="sub">Títulos digitales por formato de archivo declarado</p></div></header>
+        <div class="leyenda-columnas" id="ley-formatos" role="group" aria-label="Formatos: mostrar u ocultar"></div>
+        <div class="grafico" id="g-formatos"></div>
+        <p class="pie" id="pie-formatos">«Otros formatos» reúne los títulos que el editor registró con la opción genérica «Otros» (674) y formatos poco comunes: DAISY accesible, Word, texto plano, apps y otros (130).<br>Fuente: fichas del catálogo ISBN de la BNP, descargadas título por título.</p>
+      </article>
+      <article class="tarjeta c12" id="tarjeta-audio">
+        <header><div><h3>Audiolibros registrados por año</h3><p class="sub" id="sub-audio"></p></div></header>
+        <div class="grafico" id="g-audio"></div>
+        <p class="pie">Al pasar el cursor sobre una barra se ven las editoriales o instituciones que registraron audiolibros ese año.<br>Fuente: fichas del catálogo ISBN de la BNP (formatos MP3 y CD de audio).</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="circulacion">
+    <h2>Circulación: el Perú importa más de lo que vende afuera</h2>
+    <p class="bajada">El comercio exterior de libros mide cuántos libros entran y salen del país. Los montos están en dólares corrientes, como los reportan las aduanas peruanas a la ONU.</p>
+    <div class="filtros" role="group" aria-label="Filtros de comercio">
+      <label class="control">Producto
+        <select id="f-producto"></select>
+      </label>
+    </div>
+    <div class="rejilla">
+      <article class="tarjeta c12">
+        <header><div><h3>Importaciones y exportaciones</h3><p class="sub">Millones de US$ por año</p></div></header>
+        <div class="grafico" id="g-comercio"></div>
+        <p class="pie">Fuente: UN Comtrade, Perú como país informante, Sistema Armonizado 4901/4902/4903.</p>
+      </article>
+      <div class="filtros fila-rejilla" role="group" aria-label="Flujo comercial">
+        <div class="control">Ver en el mapa
+          <div class="segmentado" id="f-flujo">
+            <button type="button" data-v="Importación" aria-pressed="true">Importaciones</button>
+            <button type="button" data-v="Exportación" aria-pressed="false">Exportaciones</button>
+          </div>
+        </div>
+      </div>
+      <article class="tarjeta c12">
+        <header><div><h3 id="t-mapa-mundo">Socios comerciales</h3><p class="sub" id="sub-mundo">Millones de US$ acumulados en el periodo</p></div></header>
+        <div class="mapa-con-lista">
+          <div class="grafico mapa-grande" id="g-mundo"></div>
+          <ol class="lista-paises" id="lista-mundo" aria-label="Diez principales países"></ol>
+        </div>
+        <p class="pie" id="pie-mundo"></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="hallazgos">
+    <h2>Cuatro hallazgos que atender</h2>
+    <p class="bajada">Calculados entre 2015 y el último año disponible de cada fuente. No cambian con los filtros.</p>
+    <div class="hallazgos" id="lista-hallazgos"></div>
+  </section>
+
+  <section id="metodo">
+    <h2>Método, fuentes y limitaciones</h2>
+    <div class="texto">
+      <h3>Cómo se construyeron los datos</h3>
+      <ol>
+        <li><strong>Registro ISBN 2015–2023.</strong> Se descargaron los indicadores oficiales que publica InfoArtes (Ministerio de Cultura) con datos de la Agencia Peruana del ISBN. Las 10 tablas se pasaron a formato largo (año × categoría) y se comprobó que cada desagregación sume el total anual. La publicación cubre 2008–2023; el análisis usa desde 2015.</li>
+        <li><strong>Catálogo ISBN 2015–2025.</strong> Para tener los años 2024 y 2025 y el formato de los archivos digitales, se leyó el catálogo público de la BNP: el total de títulos por año y la ficha de cada publicación electrónica. Los formatos se agruparon en PDF, ePub y otros e-book, HTML, audio y otros.</li>
+        <li><strong>Comercio exterior 2015–2025.</strong> Se consultó la API pública de UN Comtrade para las partidas 4901 (libros y folletos), 4902 (diarios y revistas) y 4903 (álbumes infantiles), con el Perú como informante y desglose por país socio.</li>
+      </ol>
+      <h3>Fuentes</h3>
+      <div class="tabla-envoltura" style="max-height:none">
+        <table class="fuentes">
+          <thead><tr><th>Fuente</th><th>Qué aporta</th><th>Enlace</th></tr></thead>
+          <tbody>
+            <tr><td>BNP – Agencia Peruana del ISBN, vía InfoArtes</td><td>Títulos, ejemplares, soporte, tiraje, tipo de editor, materia, departamento e idioma, 2015–2023</td><td><a href="https://infoartes.pe/posts/registro-isbn-2008-2023" target="_blank" rel="noopener">infoartes.pe</a></td></tr>
+            <tr><td>BNP – Catálogo ISBN</td><td>Títulos por año 2015–2025 y formato de las publicaciones electrónicas</td><td><a href="https://isbn.bnp.gob.pe/catalogo.php" target="_blank" rel="noopener">isbn.bnp.gob.pe</a></td></tr>
+            <tr><td>UN Comtrade</td><td>Importaciones y exportaciones del Perú por país, 2015–2025</td><td><a href="https://comtradeplus.un.org/" target="_blank" rel="noopener">comtradeplus.un.org</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Limitaciones</h3>
+      <ul id="limitaciones">
+        <li><strong>El ISBN mide intención de publicar, no ventas.</strong> Un título registrado puede no llegar a imprimirse, y los ejemplares son los que declara el editor al registrar.</li>
+        <li><strong>Las dos series de títulos no coinciden exactamente.</strong> InfoArtes cuenta por año de registro y el catálogo por fecha de publicación declarada; por eso las cifras difieren algunos cientos por año.</li>
+        <li><strong>Los ejemplares tienen años atípicos</strong> (por ejemplo, 62 millones en 2016), probablemente por compras grandes de textos escolares; por eso se usa el tiraje promedio y su distribución.</li>
+        <li><strong>Los audiolibros no tienen un soporte propio.</strong> El registro solo distingue impreso y digital; un audiolibro se reconoce porque el editor declaró un formato de audio (MP3 o CD de audio) en la ficha. Algunos "CD audio" parecen ser PDF grabados en un CD, y muchos audiolibros que se venden en plataformas no se registran en el Perú.</li>
+        <li><strong>El comercio exterior está en dólares corrientes</strong> y no incluye libros electrónicos ni la venta informal o pirata, que en el Perú es relevante. Algunos años no reportan peso, así que se usa el valor.</li>
+      </ul>
+      <h3>Uso de inteligencia artificial</h3>
+      <p>El código de descarga, limpieza y del dashboard se escribió con ayuda de Claude Code. Todas las cifras salen de scripts en Python que se reprodujeron con los datos originales. Además, se compararon los resultados con las fuentes (InfoArtes, catálogo ISBN de la BNP y UN Comtrade) para comprobar que coincidan. Revisa el código y los datos en: <a href="https://github.com/susan-montalvo/produccion-editorial-peru" target="_blank" rel="noopener">github.com/susan-montalvo/produccion-editorial-peru</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="contenedor">Susan Montalvo · Tarea 3, Python Intermedio (d2cml-ai) · Datos actualizados al <span id="fecha-datos"></span></div>
+</footer>
+</body>
+</html>
