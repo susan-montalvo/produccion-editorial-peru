@@ -1,4 +1,4 @@
-# Tarea 3 · Más títulos, menos ejemplares: la década editorial del Perú
+# Más títulos, menos ejemplares: la década editorial del Perú
 
 **Dashboard en línea:** https://susan-montalvo.github.io/produccion-editorial-peru/
 
