@@ -4,10 +4,6 @@
 
 **Reel (video vertical, 60 s):** https://drive.google.com/file/d/13RAY533kQBxblgf4mh_AZXLkljhJJ9ig/view?usp=drive_link — también en [`reel/reel.mp4`](reel/reel.mp4). La publicación en LinkedIn queda pendiente mientras LinkedIn verifica mi identidad.
 
-![Indicadores principales del dashboard](docs/capturas/01_kpis.png)
-
-![Mapa de títulos con ISBN por departamento y evolución de Lima frente al resto del país](docs/capturas/03_territorio.png)
-
 ## Pregunta de investigación
 
 **¿Cómo ha cambiado la producción y la circulación editorial en el Perú en los últimos diez años?**
@@ -43,6 +39,16 @@ Fecha de descarga: **29 de octubre de 2026**.
    - **Variaciones** entre el primer y el último año.
    - **Razón importación/exportación** de libros (HS 4901).
 4. **Dashboard** (`web/`): HTML, CSS y JavaScript con Plotly. Los filtros de periodo, departamento, indicador del mapa, producto y flujo comercial recalculan los KPIs y los gráficos en el navegador. Cada gráfico tiene su vista de tabla, y se pueden descargar en CSV los datos filtrados.
+
+## Capturas del dashboard
+
+**Indicadores principales:** títulos, ejemplares, territorio, autopublicación, publicaciones digitales y exportaciones.
+
+![Indicadores principales del dashboard](docs/capturas/01_kpis.png)
+
+**Territorio:** títulos con ISBN por departamento y evolución de Lima frente al resto del país.
+
+![Mapa de títulos con ISBN por departamento y evolución de Lima frente al resto del país](docs/capturas/03_territorio.png)
 
 ## Hallazgos principales
 
