@@ -2,7 +2,7 @@
 
 **Dashboard en línea:** https://susan-montalvo.github.io/produccion-editorial-peru/
 
-**Publicación de LinkedIn:** _(pendiente)_
+**Reel (video vertical, 60 s):** https://drive.google.com/file/d/13RAY533kQBxblgf4mh_AZXLkljhJJ9ig/view?usp=drive_link — también en [`reel/reel.mp4`](reel/reel.mp4). La publicación en LinkedIn queda pendiente mientras LinkedIn verifica mi identidad.
 
 ![Indicadores principales del dashboard](docs/capturas/01_kpis.png)
 
